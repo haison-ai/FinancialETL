@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = financialetl
+PROJECT_NAME = project_name
 PYTHON_VERSION = 3.10
 PYTHON_INTERPRETER = python
 
@@ -27,18 +27,17 @@ clean:
 	find . -type d -name "__pycache__" -delete
 
 
-## Lint using flake8, black, and isort (use `make format` to do formatting)
+## Lint using ruff (use `make format` to do formatting)
 .PHONY: lint
 lint:
-	flake8 financialetl
-	isort --check --diff financialetl
-	black --check financialetl
+	ruff format --check
+	ruff check
 
-## Format source code with black
+## Format source code with ruff
 .PHONY: format
 format:
-	isort financialetl
-	black financialetl
+	ruff check --fix
+	ruff format
 
 
 

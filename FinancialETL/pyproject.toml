@@ -5,16 +5,10 @@ description = ""
 authors = [
     {name = "haison12",email = "36688293+haison12@users.noreply.github.com"}
 ]
+license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.9, <3.13"
+requires-python = "3.10"
 dependencies = [
-    "boto3 (>=1.37.10,<2.0.0)",
-    "pyspark (>=3.5.5,<4.0.0)",
-    "apache-airflow (>=2.10.5,<3.0.0)",
-    "pandas (>=2.2.3,<3.0.0)",
-    "matplotlib (<3.10)",
-    "scikit-learn (>=1.6.1,<2.0.0)"
-
 ]
 
 

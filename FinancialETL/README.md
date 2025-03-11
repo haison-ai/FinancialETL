@@ -1,10 +1,10 @@
-# FinancialETL
+# project_name
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-A short description of the project.
+ETL on AWS
 
 ## Project Organization
 
@@ -27,7 +27,7 @@ A short description of the project.
 │                         `1.0-jqp-initial-data-exploration`.
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         financialetl and configuration for tools like black
+│                         project_name and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -39,9 +39,9 @@ A short description of the project.
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── financialetl   <- Source code for use in this project.
+└── project_name   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes financialetl a Python module
+    ├── __init__.py             <- Makes project_name a Python module
     │
     ├── config.py               <- Store useful variables and configuration
     │
