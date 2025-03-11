@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = FinancialETL
+PROJECT_NAME = financialetl
 PYTHON_VERSION = 3.10
 PYTHON_INTERPRETER = python
 
@@ -30,31 +30,17 @@ clean:
 ## Lint using flake8, black, and isort (use `make format` to do formatting)
 .PHONY: lint
 lint:
-	flake8 finacialetl
-	isort --check --diff finacialetl
-	black --check finacialetl
+	flake8 financialetl
+	isort --check --diff financialetl
+	black --check financialetl
 
 ## Format source code with black
 .PHONY: format
 format:
-	isort finacialetl
-	black finacialetl
+	isort financialetl
+	black financialetl
 
 
-
-## Download Data from storage system
-.PHONY: sync_data_down
-sync_data_down:
-	aws s3 sync s3://bucket-name/data/ \
-		data/  --profile Haison_data
-	
-
-## Upload Data to storage system
-.PHONY: sync_data_up
-sync_data_up:
-	aws s3 sync data/ \
-		s3://bucket-name/data  --profile Haison_data
-	
 
 
 
@@ -64,11 +50,6 @@ sync_data_up:
 # PROJECT RULES                                                                 #
 #################################################################################
 
-
-## Make dataset
-.PHONY: data
-data: requirements
-	$(PYTHON_INTERPRETER) finacialetl/dataset.py
 
 
 #################################################################################
