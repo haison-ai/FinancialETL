@@ -14,7 +14,7 @@ with Diagram("AWS architecture", show=False, direction="LR"):
     source = Custom("Finn API", "./api.png")
 
     with Cluster("EC2 Instance"):
-        extract = Lambda("Trigger Lambda")
+        Lambda = Lambda("Trigger Lambda")
 
         with Cluster("Docker Container"):
 
@@ -23,12 +23,13 @@ with Diagram("AWS architecture", show=False, direction="LR"):
                 Red = Redshift("Load")
 
                 with Cluster("Transform"):
-                   transform =  [Glue("")- Spark("")]
+                   Glues = Glue("")
+                   Spark = Spark("")
 
-            S3  >> transform >> Red
+            S3  >>  [Glues - Spark] >> Red
 
 
-        source >> extract >> S3
+        source >> Lambda >> S3
 
 
 
