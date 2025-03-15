@@ -1,4 +1,5 @@
 # FinancialETL
 
 Architecture & Structure
-![AWS pipeline](https://github.com/user-attachments/assets/c9a18d1d-43ee-4ef9-8809-f8e7a2a81c3a)
+
+![AWS pipeline drawio](https://github.com/user-attachments/assets/2b4a4e61-a07e-4e90-ae8b-c0d29ee1242a)
