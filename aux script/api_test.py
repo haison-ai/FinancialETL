@@ -24,9 +24,9 @@ def response_api(key, file_path="data.csv"):
 
 if __name__ == "__main__":
     df_spark = response_api("LXQ6FK4GTHDDC9QT")
-    df_spark.show(10)
+    df_spark.show(2)
 
-
+        
 
 
 
